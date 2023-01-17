@@ -26,10 +26,11 @@
     access: 'canAdmin',
     routes: [
       {
-        path: '/admin/sub-page',
-        name: 'sub-page',
+        path: '/admin/user',
+        name: 'user',
         icon: 'smile',
-        component: './Welcome',
+        component: './admin/user',
+		access: 'canAdmin',
       },
       {
         component: './404',

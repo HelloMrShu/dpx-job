@@ -20,8 +20,8 @@ const Welcome: React.FC = () => {
       <Card>
         <Alert
           message={intl.formatMessage({
-            id: 'pages.welcome.alertMessage',
-            defaultMessage: 'Faster and stronger heavy-duty components have been released.',
+            id: 'pages.welcome.link',
+            defaultMessage: ' ',
           })}
           type="success"
           showIcon
@@ -31,16 +31,6 @@ const Welcome: React.FC = () => {
             marginBottom: 24,
           }}
         />
-        <Typography.Text strong>
-          <a
-            href="https://procomponents.ant.design/components/table"
-            rel="noopener noreferrer"
-            target="__blank"
-          >
-            <FormattedMessage id="pages.welcome.link" defaultMessage="Welcome" />
-          </a>
-        </Typography.Text>
-        <CodePreview>yarn add @ant-design/pro-components</CodePreview>
       </Card>
     </PageContainer>
   );

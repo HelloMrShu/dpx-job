@@ -229,10 +229,11 @@ export function getRoutes() {
         "access": "canAdmin",
         "routes": [
           {
-            "path": "/admin/sub-page",
-            "name": "sub-page",
+            "path": "/admin/user",
+            "name": "user",
             "icon": "smile",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Welcome' */'/data/projects/dpx-job/src/pages/Welcome'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__admin__user' */'/data/projects/dpx-job/src/pages/admin/user'), loading: LoadingComponent}),
+            "access": "canAdmin",
             "exact": true
           },
           {

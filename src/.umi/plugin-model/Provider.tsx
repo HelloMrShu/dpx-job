@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import initialState from '/data/projects/dpx-job/src/.umi/plugin-initial-state/models/initialState';
-
+import model0 from "/data/projects/dpx-job/src/models/user";
 // @ts-ignore
 import Dispatcher from './helpers/dispatcher';
 // @ts-ignore
@@ -9,7 +9,7 @@ import Executor from './helpers/executor';
 // @ts-ignore
 import { UmiContext } from './helpers/constant';
 
-export const models = { '@@initialState': initialState,  };
+export const models = { '@@initialState': initialState, 'user': model0 };
 
 export type Model<T extends keyof typeof models> = {
   [key in keyof typeof models]: ReturnType<typeof models[T]>;
